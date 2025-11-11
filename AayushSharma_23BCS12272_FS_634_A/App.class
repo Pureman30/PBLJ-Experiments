@@ -1,0 +1,22 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+import java.awt.Component;
+import javax.swing.JFrame;
+
+public class App {
+   public App() {
+   }
+
+   public static void main(String[] var0) throws Exception {
+      short var1 = 600;
+      JFrame var3 = new JFrame("Snake");
+      var3.setVisible(true);
+      var3.setSize(var1, var1);
+      var3.setLocationRelativeTo((Component)null);
+      var3.setResizable(false);
+      var3.setDefaultCloseOperation(3);
+      SnakeGame var4 = new SnakeGame(var1, var1);
+      var3.add(var4);
+      var3.pack();
+      var4.requestFocus();
+   }
+}
